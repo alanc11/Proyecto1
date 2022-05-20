@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>People</title>
+    <style>
+          *{
+            box-sizing: border-box;
+        }
+        :root{
+            --principal-blue: #4B5BAD;
+            --light-blue: #B6C2FA;
+            --grey-blue: #8890BA;
+            --strong-blue: #6B83FA;
+            --dark-blue: #35407A;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+        }
+        .logo{
+            width: 140px;
+            height: 40px;
+            margin-left: 24px;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0px;
+            padding: 6px;
+            border-bottom: 1px solid #4A5BAD;
+        }
+        .nav-right{
+            display: flex;
+            margin-left: 12px;
+        }
+        .nav-right ul{
+            list-style: none;
+            padding: 0%;
+            margin: 4px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            
+        }
+        .nav-right ul li{
+            margin: 8px;
+            font-weight: bold;
+        }
+        .nav-right ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-left span{
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .nav-left{
+            padding: 0%;
+            margin-right: 34px;
+        }
+        .nav-left span:hover,
+        .nav-right ul a:hover{
+            border: 1px solid #6B83FA;
+            color: #6B83FA;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .master-container{
+            display: flex;
+        }
+        aside{
+            width: 20%;
+            margin-right: 12px;
+            background-color: var(--light-blue);
+            margin-top: 18px;
+            border-radius: 12px;
+            padding: 8px;
+            height: 330px;
+            
+        }
+        main{
+            margin: 20px;
+            width: 1100px;
+            
+        }
+        article{
+            width: 100%;
+            height: 230px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 12px;
+           
+        }
+        article div {
+            margin-left: 210px;
+        }
+        article img{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;   
+        }
+        .box1,.box3{
+            background-color: rgba(187, 187, 187, 0.715);
+        }
+        .box2,.box4{
+            background-color: var(--principal-blue);
+            color: white;
+        }
+        
+        @media(max-width: 1300px){
+            .nav-left{
+               display: none;
+           }
+           article{
+               width: 340px;
+               height: auto;
+               margin-bottom: 28px;
+           }
+           .master-container{
+               display: inline-block;
+           }
+           aside{
+               display: none;
+               margin-left: 20px;
+           }
+           .nav-right ul{
+                padding: 0;
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            article img{
+                position: relative;
+            }
+            article div{
+                margin-left: 0;
+            }
+            .logo{
+            width: 140px;
+            height: 40px;
+            margin-left: 0px;
+            }
+            main{
+                width: 95%;
+                margin-top: 12px;
+                margin-right: 0;
+                margin-left: 30px;
+                align-items: center;
+            }
+       }
+       
+        </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="./logos/logo1.jpg" alt="logo" class="logo">
+            <div class="nav-right">
+                
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                 
+                    <li>
+                        <a href="./people.html">People</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-left">
+                <span>Gallery</span>
+                <span>Code</span>
+            </div>
+        </nav>
+    </header>
+   <div class="master-container">
+    <main>
+        <article class="box1">
+            <img class="img" src="./images/montse-alan1}.jpg" alt="montse-alan">
+            <div class="content">
+                <h3>That Girl</h3>
+                <p>Funny story about her, I knew her for the first time through  Tinder while I was on a job trip and since then, We have'nt stopped talking and texting.</p>
+            </div>
+        </article>
+
+        <article class="box2">
+            <img class="img" src="./images/montseI.jpg" alt="alan-montse">
+            <div class="content2">
+                <h3>Montse and I </h3>
+                <p>I decided visit her, I was really excited thinking about meeting her, so I just took a plane, rented a place to sleep and I went to her. I enjoyed so much that trip, no regrets.</p> 
+            </div> 
+        </article>
+
+        <article class="box3">
+            <img class="img" src="./images/montse1.jpg" alt="alan-montse">
+            <div class="content2">
+                <h3>Montse taking a pic</h3>
+                <p>Montse likes taking pics of her city, even though she's a residente from there, she loves to capture the landscape, sometimes is posted on social media
+                    sometimes she just keeps the memory to herself.
+                </p> 
+            </div> 
+        </article>
+
+       <article class="box4">
+            <img class="img" src="./images/montse2.jpg" alt="alan-montse">
+            <div class="content2">
+                <h3>Montse distracted taking a pic again </h3>
+                <p>I liked to take pics of her distracted because she didn't even realize that. I was only able to take two photos of her, but I'll always keep them. I don't want to forget her.</p> 
+            </div> 
+        </article>
+    </main>
+    <aside>
+        <div class="rigth-side">
+            <h3>Fun facts and others</h3>
+            <p>1. She is lefty <br> <br>
+                2. I traveled 800km just to meet her <br><br>
+                3. Her parents thought that I was a killer <br><br>
+                4. Despite I was in the city only for her, I saw her a very short time <br><br>
+                5. 
+            </p>
+        </div>
+    </aside>
+</div>
+</body>
+</html>

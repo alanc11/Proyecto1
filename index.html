@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        :root{
+            --principal-blue: #4B5BAD;
+            --light-blue: #B6C2FA;
+            --grey-blue: #8890BA;
+            --strong-blue: #6B83FA;
+            --dark-blue: #35407A;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+        }
+        .logo{
+            width: 140px;
+            height: 40px;
+            margin-left: 24px;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0px;
+            padding: 6px;
+            border-bottom: 1px solid #4A5BAD;
+        }
+        .nav-right{
+            display: flex;
+            margin-left: 12px;
+        }
+        .nav-right ul{
+            list-style: none;
+            padding: 0%;
+            margin: 4px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            
+        }
+        .nav-right ul li{
+            margin: 8px;
+            font-weight: bold;
+        }
+        .nav-right ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-left span{
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .nav-left{
+            padding: 0%;
+            margin-right: 34px;
+        }
+        .nav-left span:hover,
+        .nav-right ul a:hover{
+            border: 1px solid #6B83FA;
+            color: #6B83FA;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .container{
+            margin-top: 28px;
+            display: flex;
+            margin-right: 28px;
+            margin-left: 28px;
+            justify-content: space-between;
+        }
+       .container div img{
+           height: 350px;
+           width: 400px;
+           border-radius: 8px;
+       }
+       .container div{
+           width: 400px;
+           background-color: #e3e3e3a1;
+           border-radius: 8px;
+       }
+       .container div p{
+           padding: 8px;
+       }
+       .img-title{
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: var(--md);
+       }
+       .img-desc{
+           margin-top: 0;
+           font-size: var(--sm);
+           margin-bottom: 0px;
+       }
+       .links{
+           text-decoration: none;
+           color: var(--grey-blue);
+           font-size: var(--sm);
+           margin-top: 0;
+           margin-bottom: 4px;
+           
+       }
+       .links:hover{
+           text-decoration: none;
+           color: var(--strong-blue);
+           
+       }
+       @media(max-width: 1300px){
+            .nav-left{
+               display: none;
+           }
+           .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+           }
+           .container div{
+                margin-bottom: 18px;
+           }
+           .nav-right ul{
+                padding: 0;
+            }
+            .box{
+                width: 90% !important;
+            }
+            .box .img1{
+                object-fit: cover;
+                width: 100% !important;
+                height: 240px !important;
+            }
+            .logo{
+            width: 140px;
+            height: 40px;
+            margin-left: 0px;
+            }
+           
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./logos/logo1.jpg" alt="logo" class="logo">
+            <div class="nav-right">
+                
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./people.html">People</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-left">
+                <span>Gallery</span>
+                <span>Code</span>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+       <div class="box">
+           <img src="./images/rainy-night.jpg" alt="rainy night cdmx" class="img1">
+           <p class="img-title"> <strong>Rainy night</strong> </p>
+           <p class="img-desc">This photo was taken on my second day on the city, the moments before that photo were really nice, also the food (chinese food), and the company. No doubt, that day were one of my favorites. All was going perfect,
+               and then, the rain came, and made the moment even better. Walking round the city with that girl. 
+               <br>
+               <a class="links" href="./images/montse2.jpg">Clic aqui para ver foto de Montse</a>
+           </p>
+           
+       </div>
+       <div class="box">
+           <img src="./images/landscape1.jpg" alt="paisaje cdmx" class="img1">
+           <p class="img-title"> <strong>Museum view</strong> </p>
+           <p class="img-desc">This is not the best pic, but I like it so much. The view on that point was incredible, I could see the giant buildings, some monuments, and a lot of trees, I would have love to see that landscape with her. Anyways, I enjoyed and took a lot of pics of that.  </p>
+       </div>
+       <div class="box">
+            <img src="./images/museum.jpg" alt="museo" class="img1">
+            <p class="img-title"><strong>The Chapultepec Casttle</strong></p>
+            <p class="img-desc">This is the face of an iconic musuem in the heart of Mexico City, this place contains a lot of history, very interesting objects suchs as atique books, weapons, farming tools, and old machines like cameras,
+                televisions, and more. The entrance costs $80 mxn. I went here on my first day in the city, just to wait for that girl.
+            </p>
+       </div>
+    </main> 
+    <footer>
+
+    </footer>
+</body>
+</html>

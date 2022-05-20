@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        :root{
+            --principal-blue: #4B5BAD;
+            --light-blue: #B6C2FA;
+            --grey-blue: #8890BA;
+            --strong-blue: #6B83FA;
+            --dark-blue: #35407A;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+        }
+        .logo{
+            width: 140px;
+            height: 40px;
+            margin-left: 24px;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0px;
+            padding: 6px;
+            border-bottom: 1px solid #4A5BAD;
+        }
+        .nav-right{
+            display: flex;
+            margin-left: 12px;
+        }
+        .nav-right ul{
+            list-style: none;
+            padding: 0%;
+            margin: 4px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            
+        }
+        .nav-right ul li{
+            margin: 8px;
+            font-weight: bold;
+        }
+        .nav-right ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-left span{
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .nav-left{
+            padding: 0%;
+            margin-right: 34px;
+        }
+        .nav-left span:hover,
+        .nav-right ul a:hover{
+            border: 1px solid #6B83FA;
+            color: #6B83FA;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .back-img{
+            margin-top: 0px;
+            width: 100%;
+            height: 400px;
+            background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        article{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 170px;
+            height: 144x;
+            background-color: white;
+            border-radius: 18px;
+            padding: 8px;
+        }
+        article h3 a{
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+        article h3 a:hover{
+            color: var(--light-blue);
+        }
+        article span{
+            font-size: 14px;
+        }
+        article h3{
+            font-size: 16px;
+        }
+        article span{
+            font-size: 14px;
+        }
+        .icon{
+            height: 40px;
+            width: 40px;
+        }
+        @media(max-width: 1300px){
+           .back-img{
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+           }
+           article{
+               margin: 12px;
+               border: 1px solid black;
+           }
+           .nav-left{
+               display: none;
+           }
+           .logo{
+            width: 140px;
+            height: 40px;
+            margin-left: 0px;
+            }
+            .nav-right ul{
+                padding: 0;
+            }
+        }
+            
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./logos/logo1.jpg" alt="logo" class="logo">
+            <div class="nav-right">
+                
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./people.html">People</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-left">
+                <span>Gallery</span>
+                <span>Code</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="back-img">
+            <article class="phone">
+                <img class="icon" src="./logos/phone.png" alt="phone-icon">
+                <h3> <a href="https://api.whatsapp.com/send?phone=8711424604">Phone number</a> </h3>
+                <span>+55 871-1424-604</span>
+            </article>
+            <article class="email">
+                <img class="icon" src="./logos/email.png" alt="phone-icon">
+                <h3>E-mail</h3>
+                <span>castillo.alan911@gmail.com</span>
+            </article>
+            <article class="facebook">
+                <img class="icon" src="./logos/facebook.png" alt="phone-icon">
+                <h3> <a href="https://www.facebook.com/alan.o.castillogarcia">Facebook</a> </h3>
+                <span>Alan Castillo</span>
+            </article>
+            <article class="insta">
+                <img class="icon" src="./logos/instagram.png" alt="phone-icon">
+                <h3> <a href="https://www.instagram.com/alancast11/">Instagram</a> </h3>
+                <span>alancast11</span>
+            </article>
+            
+        </div>
+    </main>
+    
+</body>
+</html>
